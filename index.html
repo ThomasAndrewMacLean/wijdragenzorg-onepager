@@ -16,20 +16,62 @@
         }
         main{
             display: flex;
+            flex-direction: column;
             justify-content:center;
             align-items: center;
             height: 100vh;
+            width: 100vw;
+            overflow: hidden;
         }
-        img{
+        img.logo{
             width: 90%;
             max-width: 600px;
         }
+        a{
+            text-decoration: none;
+            color: inherit;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        .center{
+            text-align: center;
+        }
+        .text{
+            margin-top: 2rem;
+            background-color: #fee1b059;
+            padding :4rem;
+            border-radius: 20px;
+            position:relative;
+        }
+        .afbeelding{
+            position: absolute;
+            height: 100%;
+            bottom: -40%;
+            right: -130px;
+            z-index: -1;
+            transform: rotateY(180deg);
+        }
+
     </style>
 </head>
 <body>
     <main>
 
-        <img src="logo.png" alt="logo">
+        <img src="logo.png" alt="logo" class="logo">
+
+        <div class="text">
+            <h1>Thuisverpleging Virginie Laevens</h1>
+            <div class="center">
+
+                <a href="mailto:verpleging@wijdragenzorg.be">verpleging@wijdragenzorg.be</a>
+            </div>
+            <div class="center">
+                <a href="tel:0498691074">0498 / 69 10 74</a>
+            </div>
+            
+            <img src="verpleging.png" alt="verpleegster bij koppel" class="afbeelding">
+            
+        </div>
     </main>
 </body>
 </html>
